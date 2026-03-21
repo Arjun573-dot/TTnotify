@@ -1,3 +1,12 @@
+const savedData = JSON.parse(localStorage.getItem("timetable"));
+if (savedData) {
+  Object.assign(timetable, savedData);
+}
+
+
+
+
+
 const timetable = {
   monday: [],
   tuesday: [],
