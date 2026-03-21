@@ -14,7 +14,7 @@ inputs.forEach(input => {
     const index = Number(input.dataset.index);
 
     timetable[day][index] = input.value;
-
+    localStorage.setItem("timetable", JSON.stringify(timetable));
     console.log(timetable);
   });
 });
